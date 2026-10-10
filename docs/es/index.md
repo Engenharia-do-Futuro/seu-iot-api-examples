@@ -10,6 +10,8 @@ Seu IoT permite que aplicaciones externas lean datos de tus dispositivos mediant
 | Recibir datos en vivo | [Tiempo real (MQTT)](realtime-mqtt.md) |
 | Incrustar un gráfico en mi sitio | [Widgets](widgets.md) |
 | Entender expiración, rotación y revocación | [Ciclo de vida](lifecycle.md) |
+| Conectar un asistente de IA (Claude, Cursor...) | [Conectar una IA (MCP)](mcp-connect.md) |
+| Aprobar, editar o revocar una app de IA | [Administrar apps de IA conectadas](mcp-manage.md) |
 | Resolver un error | [Solución de problemas](troubleshooting.md) |
 
 El código ejecutable está en [`examples/`](../../examples).

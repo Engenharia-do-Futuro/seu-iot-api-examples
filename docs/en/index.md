@@ -10,6 +10,8 @@ Seu IoT lets external applications read data from your devices through an **API 
 | Receive data live | [Real-time (MQTT)](realtime-mqtt.md) |
 | Embed a chart in my website | [Widgets](widgets.md) |
 | Understand expiry, rotation and revocation | [Lifecycle](lifecycle.md) |
+| Connect an AI assistant (Claude, Cursor...) | [Connect an AI (MCP)](mcp-connect.md) |
+| Approve, edit or revoke an AI app | [Manage connected AI apps](mcp-manage.md) |
 | Fix an error | [Troubleshooting](troubleshooting.md) |
 
 Runnable code lives in [`examples/`](../../examples).

@@ -26,6 +26,7 @@ This repository is the companion for that external side of the platform. It docu
 | Read historical data | [python/rest-process-data](examples/python/rest-process-data), [javascript/node-rest](examples/javascript/node-rest) | [REST API](docs/en/rest-api.md) |
 | Receive data live | [python/mqtt-tls](examples/python/mqtt-tls), [python/mqtt-websocket](examples/python/mqtt-websocket), [javascript/node-mqtt-websocket](examples/javascript/node-mqtt-websocket) | [Real-time](docs/en/realtime-mqtt.md) |
 | Embed a chart in a website | [web/widget-embed](examples/web/widget-embed) | [Widgets](docs/en/widgets.md) |
+| Let an AI assistant work with your account | none (guided in the dashboard) | [Connect an AI (MCP)](docs/en/mcp-connect.md) |
 
 New here? Start with [Getting started](docs/en/getting-started.md).
 

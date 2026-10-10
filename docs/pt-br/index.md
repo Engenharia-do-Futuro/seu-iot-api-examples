@@ -10,6 +10,8 @@ O Seu IoT permite que aplicações externas leiam dados dos seus dispositivos po
 | Receber dados ao vivo | [Tempo real (MQTT)](realtime-mqtt.md) |
 | Embutir um gráfico no meu site | [Widgets](widgets.md) |
 | Entender expiração, rotação e revogação | [Ciclo de vida](lifecycle.md) |
+| Conectar um assistente de IA (Claude, Cursor...) | [Conectar uma IA (MCP)](mcp-connect.md) |
+| Aprovar, editar ou revogar um app de IA | [Gerenciar apps de IA conectados](mcp-manage.md) |
 | Resolver um erro | [Solução de problemas](troubleshooting.md) |
 
 O código executável está em [`examples/`](../../examples).

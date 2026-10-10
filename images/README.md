@@ -24,3 +24,13 @@ The docs reference them with relative paths (`../../images/<page>/<file>`), so t
 | `widgets/03-embed-code.png` | widgets | The code icon (`</>`) window with the embed tag (token hidden) |
 | `lifecycle/contract-actions.png` | lifecycle | Contract actions in the list: revoke, reactivate, delete |
 | `lifecycle/usage-window.png` | lifecycle | The contract usage window (30 days and daily series) |
+| `mcp-connect/01-add-connector.png` | mcp-connect | Adding the Seu IoT connector in an AI assistant (for example Claude.ai > Settings > Connectors) |
+| `mcp-connect/02-consent-screen.png` | mcp-connect | The authorization screen: app name, projects, permissions |
+| `mcp-connect/03-permissions-table.png` | mcp-connect | The permissions table with Allow and Ask for my confirmation |
+| `mcp-manage/01-connected-apps-list.png` | mcp-manage | Configuration > Connected apps, the list of apps |
+| `mcp-manage/02-pending-approval.png` | mcp-manage | Pending changes: the bell in Notifications and the "Changes waiting for your approval" card |
+| `mcp-manage/03-review-change.png` | mcp-manage | The review window of a change proposed by an AI app |
+| `mcp-manage/04-credential-delivery.png` | mcp-manage | Approving a key, with the "hand the credential straight to the app" option (secrets hidden) |
+| `mcp-manage/05-edit-permissions.png` | mcp-manage | The Edit permissions window |
+| `mcp-manage/06-activity-log.png` | mcp-manage | The "What this app did" window |
+| `mcp-manage/07-revoke.png` | mcp-manage | The revoke confirmation (typing the app name) |
