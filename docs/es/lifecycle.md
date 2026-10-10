@@ -17,6 +17,8 @@ Llamar a `POST /external/v1/mqtt-credentials` (o al `/bootstrap` público de un 
 - **Eliminar** un contrato lo envía a la papelera: deja de funcionar de inmediato y se purga después.
 - Un consumidor que recibe el mensaje de revocación debe detenerse y **no** reintentar.
 
+![Acciones del contrato en la lista: revocar, reactivar y eliminar.](../../images/lifecycle/contract-actions.png)
+
 ## Cambios de alcance
 
 Editar los procesos y dispositivos del contrato se hace en el panel. Quitar elementos vale desde la próxima llamada REST y desconecta a los consumidores MQTT en vivo, que se reconectan con la lista de tópicos más corta.
@@ -26,6 +28,8 @@ Editar los procesos y dispositivos del contrato se hace en el panel. Quitar elem
 El panel muestra, por contrato, las solicitudes REST de hoy y de los últimos 30 días, y las cargas de widget, con una serie diaria. El MQTT no se cuenta.
 
 Si el número de la REST sigue creciendo cuando esperabas actualizaciones en vivo, algún consumidor está haciendo polling: reemplázalo por una suscripción [MQTT](realtime-mqtt.md).
+
+![La ventana de uso de un contrato: solicitudes de hoy y de los últimos 30 días, con serie diaria.](../../images/lifecycle/usage-window.png)
 
 ## Límites de un contrato
 

@@ -8,6 +8,12 @@ Um widget é um gráfico que você cola em qualquer página web com uma tag `<sc
 2. Crie um widget para um dos sinais do escopo do contrato.
 3. Clique no ícone de código (`</>`), gere o `embed_token` e copie a tag.
 
+![Painel > Configurações do projeto > Contratos de API > seu contrato > aba Widgets.](../../images/widgets/01-widgets-tab.png)
+
+![Criando um widget: tipo de gráfico, sinais e dispositivos.](../../images/widgets/02-create-widget.png)
+
+![O ícone de código (</>) gera o embed_token e mostra a tag para copiar.](../../images/widgets/03-embed-code.png)
+
 ## Embutir
 
 ```html

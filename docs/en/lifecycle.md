@@ -17,6 +17,8 @@ Calling `POST /external/v1/mqtt-credentials` (or a widget's public `/bootstrap`)
 - **Deleting** a contract sends it to the trash: it stops working immediately and is purged later.
 - A consumer that receives the revoked message must stop and **not** retry.
 
+![Contract actions in the list: revoke, reactivate and delete.](../../images/lifecycle/contract-actions.png)
+
 ## Scope changes
 
 Editing the contract's processes and devices is done in the dashboard. Removing items takes effect on the next REST call and disconnects live MQTT consumers, so they reconnect with the narrower topic list.
@@ -26,6 +28,8 @@ Editing the contract's processes and devices is done in the dashboard. Removing 
 The dashboard shows, per contract, the REST requests of today and of the last 30 days, and the widget loads, with a daily series. MQTT is not counted.
 
 If the REST number keeps growing when you expected live updates, a consumer is polling: replace it with an [MQTT](realtime-mqtt.md) subscription.
+
+![The usage window of a contract: requests today and in the last 30 days, with a daily series.](../../images/lifecycle/usage-window.png)
 
 ## Limits of a contract
 

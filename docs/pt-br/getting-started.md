@@ -16,3 +16,11 @@ Um JSON descrevendo seu contrato indica que está tudo pronto. A partir daqui:
 - um gráfico no seu site: [Widgets](widgets.md)
 
 Editar o escopo do contrato no painel vale a partir da próxima requisição. Remover itens também desconecta os consumidores MQTT ao vivo, que reconectam com a lista de tópicos menor. Para receber itens recém-adicionados por MQTT, peça uma nova credencial.
+
+## Guia visual
+
+![Painel > Configurações do projeto > Contratos de API: a lista de contratos do projeto.](../../images/getting-started/01-api-contracts-list.png)
+
+![Criando um contrato: nome, processos e dispositivos do escopo.](../../images/getting-started/02-create-contract.png)
+
+![Emitindo a chave: a chave de API e as credenciais MQTT aparecem uma única vez (segredos ocultados nesta imagem).](../../images/getting-started/03-issue-key.png)

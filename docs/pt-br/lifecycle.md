@@ -17,6 +17,8 @@ Chamar `POST /external/v1/mqtt-credentials` (ou o `/bootstrap` público de um wi
 - **Excluir** um contrato o manda para a lixeira: ele para de funcionar imediatamente e é apagado depois.
 - Um consumidor que recebe a mensagem de revogação deve parar e **não** tentar de novo.
 
+![Ações do contrato na lista: revogar, reativar e excluir.](../../images/lifecycle/contract-actions.png)
+
 ## Mudanças de escopo
 
 Editar os processos e dispositivos do contrato é feito no painel. Remover itens vale na próxima chamada REST e desconecta os consumidores MQTT ao vivo, que reconectam com a lista de tópicos menor.
@@ -26,6 +28,8 @@ Editar os processos e dispositivos do contrato é feito no painel. Remover itens
 O painel mostra, por contrato, as requisições REST de hoje e dos últimos 30 dias, e os carregamentos de widget, com uma série diária. O MQTT não é contado.
 
 Se o número da REST cresce sem parar quando você esperava atualizações ao vivo, algum consumidor está fazendo polling: troque-o por uma assinatura [MQTT](realtime-mqtt.md).
+
+![A janela de uso de um contrato: requisições de hoje e dos últimos 30 dias, com série diária.](../../images/lifecycle/usage-window.png)
 
 ## Limites de um contrato
 

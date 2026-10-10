@@ -16,3 +16,11 @@ Un JSON que describa tu contrato indica que todo está listo. A partir de aquí:
 - un gráfico en tu sitio: [Widgets](widgets.md)
 
 Editar el alcance del contrato en el panel vale desde la próxima solicitud. Quitar elementos también desconecta a los consumidores MQTT en vivo, que se reconectan con la lista de tópicos más corta. Para recibir por MQTT los elementos recién añadidos, pide una nueva credencial.
+
+## Guía visual
+
+![Panel > Configuración del proyecto > Contratos de API: la lista de contratos del proyecto.](../../images/getting-started/01-api-contracts-list.png)
+
+![Creando un contrato: nombre, procesos y dispositivos del alcance.](../../images/getting-started/02-create-contract.png)
+
+![Emitiendo la clave: la clave de API y las credenciales MQTT aparecen una sola vez (secretos ocultos en esta imagen).](../../images/getting-started/03-issue-key.png)

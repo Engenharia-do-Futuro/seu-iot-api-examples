@@ -8,6 +8,12 @@
 4. Link it from the root [README](README.md) and from the relevant doc page.
 5. Code, comments and example READMEs are written in English only.
 
+## Images in the docs
+
+- Put screenshots and GIFs in `images/<page>/`, shared by all languages, and reference them from `docs/<language>/*.md` with a relative path such as `![Caption](../../images/widgets/01-widgets-tab.png)`. See [images/README.md](images/README.md) for the naming rules and the checklist of expected files.
+- Hide every key, password and token in the picture before committing.
+- The alt text is shown as the caption: write it in each language and name the Seu IoT screen.
+
 ## Documentation and translations
 
 - `docs/en/` is the source of truth. Write and change docs there first.

@@ -8,6 +8,12 @@ A widget is a chart you paste into any web page with one `<script>` tag. Example
 2. Create a widget for one of the signals in the contract's scope.
 3. Click the code icon (`</>`), generate the `embed_token` and copy the tag.
 
+![Dashboard > Project settings > API contracts > your contract > Widgets tab.](../../images/widgets/01-widgets-tab.png)
+
+![Creating a widget: chart type, signals and devices.](../../images/widgets/02-create-widget.png)
+
+![The code icon (</>) generates the embed_token and shows the tag to copy.](../../images/widgets/03-embed-code.png)
+
 ## Embed
 
 ```html

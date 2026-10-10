@@ -16,3 +16,11 @@ A JSON document describing your contract means you are ready. From here:
 - a chart on your site: [Widgets](widgets.md)
 
 Editing the contract scope in the dashboard takes effect on the next request. Removing items also disconnects live MQTT consumers, so they reconnect with the narrower topic list. To receive newly added items over MQTT, request a new credential.
+
+## Visual guide
+
+![Dashboard > Project settings > API contracts: the list of the project's contracts.](../../images/getting-started/01-api-contracts-list.png)
+
+![Creating a contract: name, processes and devices in scope.](../../images/getting-started/02-create-contract.png)
+
+![Issuing the key: the API key and MQTT credentials appear only once (secrets hidden in this picture).](../../images/getting-started/03-issue-key.png)

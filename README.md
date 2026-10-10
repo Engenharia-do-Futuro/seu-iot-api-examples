@@ -36,6 +36,7 @@ docs/{en,pt-br,es}/   documentation, one folder per language (same file names)
 examples/python/      REST and MQTT examples (Python 3.10+)
 examples/javascript/  REST and MQTT examples (Node.js 20.6+)
 examples/web/         browser examples (widget embed)
+images/               screenshots and GIFs used as a visual guide in the docs
 ```
 
 Each example is self-contained: its own README, dependencies and `.env.example`. Copy `.env.example` to `.env` and fill in your values. **Never commit your `.env` or your API key.**

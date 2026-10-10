@@ -42,6 +42,7 @@ A REST devolve timestamps ISO 8601 e o MQTT não, então normalize antes de mist
 - Depois de ficar offline, chame a REST **uma vez** com `start=<último timestamp processado>` para preencher a lacuna e volte ao MQTT. Nunca rode essa chamada em um timer.
 - Se nada chegar, confira se o processo tem `publish_on_execute` habilitado e se o dispositivo está online.
 
+
 ## Revogação
 
 O tópico `/broker/api-contract/<contract_uuid>/revoked` é sempre liberado. Uma mensagem nele significa que o contrato foi revogado ou excluído: feche o cliente e **não reconecte**. Veja [Ciclo de vida](lifecycle.md).
