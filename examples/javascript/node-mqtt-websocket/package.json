@@ -1,0 +1,10 @@
+{
+  "name": "seu-iot-node-mqtt-websocket-example",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Seu IoT: live data over MQTT on WebSocket with mqtt.js",
+  "scripts": { "start": "node --env-file=.env subscribe.mjs" },
+  "dependencies": { "mqtt": "^5.10.0" },
+  "engines": { "node": ">=20.6" }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "seu-iot-node-rest-example",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Seu IoT: read contract scope and process data with Node's built-in fetch",
+  "scripts": {
+    "contract": "node --env-file=.env contract.mjs",
+    "data": "node --env-file=.env process-data.mjs"
+  },
+  "engines": { "node": ">=20.6" }
+}
