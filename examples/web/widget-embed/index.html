@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Seu IoT embeddable widget - example</title>
+    <style>
+      body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 720px; margin: 48px auto; padding: 0 16px; color: #1f1f1f; }
+      code { background: #f5f5f5; padding: 2px 6px; border-radius: 4px; }
+      #theme-toggle { font: inherit; padding: 6px 14px; border-radius: 6px; border: 1px solid #d9d9d9; background: #fff; cursor: pointer; }
+    </style>
+  </head>
+  <body>
+    <h1>My website</h1>
+    <p>This is regular page content. The Seu IoT widget renders right below it.</p>
+
+    <h2>Monitored signal</h2>
+
+    <!--
+      Replace EMBED_TOKEN with your own token (the server URL below is the official one):
+      1. Seu IoT dashboard > Project settings > API contracts.
+      2. Create (or edit) a contract with processes/devices in scope.
+      3. In the contract's "Widgets" tab, create a widget for one of those signals.
+      4. Click the code icon (</>) of the widget, generate the embed_token and
+         copy the <script> tag shown there.
+      Optional: data-theme="light" or "dark" forces a theme. Without it the widget
+      follows the visitor's system/browser preference.
+    -->
+    <script
+      id="widget-script"
+      src="https://seuiot.com.br:8000/widgets/v1/embed.js"
+      data-widget="EMBED_TOKEN"
+      async
+    ></script>
+
+    <h2>Light / dark theme</h2>
+    <p>
+      The host page can switch the widget theme live, without reloading it, with
+      <code>window.SeuIoTWidget.setTheme(token, "light" | "dark")</code>.
+    </p>
+    <button id="theme-toggle" type="button">Force dark theme</button>
+
+    <script>
+      // Read the token from the widget <script> itself so it is never duplicated.
+      var WIDGET_TOKEN = document.getElementById("widget-script").getAttribute("data-widget");
+      var forcedTheme = "dark";
+      var button = document.getElementById("theme-toggle");
+      button.addEventListener("click", function () {
+        button.textContent = forcedTheme === "dark" ? "Force light theme" : "Force dark theme";
+        // embed.js loads with "async": ignore clicks that arrive before it is ready.
+        if (window.SeuIoTWidget && window.SeuIoTWidget.setTheme) {
+          window.SeuIoTWidget.setTheme(WIDGET_TOKEN, forcedTheme);
+        }
+        forcedTheme = forcedTheme === "dark" ? "light" : "dark";
+      });
+    </script>
+  </body>
+</html>
