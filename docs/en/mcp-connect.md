@@ -11,7 +11,7 @@ There is no switch to turn on. The connection exists only when you **authorize a
 ## Connection URL
 
 ```
-https://seuiot.com.br:8000/mcp
+https://seuiot.com.br/mcp
 ```
 
 You do not paste any key: the assistant discovers how to sign in by itself (OAuth 2.1 with PKCE) and opens a Seu IoT page where **you** decide what it can access.
@@ -20,10 +20,10 @@ You do not paste any key: the assistant discovers how to sign in by itself (OAut
 
 | Client | How |
 |---|---|
-| **Claude Code** | `claude mcp add --transport http seu-iot https://seuiot.com.br:8000/mcp`, then run `/mcp` and authorize in the browser |
+| **Claude Code** | `claude mcp add --transport http seu-iot https://seuiot.com.br/mcp`, then run `/mcp` and authorize in the browser |
 | **Claude.ai** | Settings > Connectors > add a custom connector with the URL above |
-| **Gemini CLI** | In `settings.json`: `"mcpServers": { "seu-iot": { "httpUrl": "https://seuiot.com.br:8000/mcp" } }` |
-| **Cursor** | In `mcp.json`: `"seu-iot": { "url": "https://seuiot.com.br:8000/mcp" }` |
+| **Gemini CLI** | In `settings.json`: `"mcpServers": { "seu-iot": { "httpUrl": "https://seuiot.com.br/mcp" } }` |
+| **Cursor** | In `mcp.json`: `"seu-iot": { "url": "https://seuiot.com.br/mcp" }` |
 | **ChatGPT** | MCP connectors, where your account has the feature. Custom GPT Actions are **not supported yet** |
 
 Support for MCP connectors changes quickly between vendors, so check your client's current documentation. Any client that supports MCP over HTTP with OAuth should work.
