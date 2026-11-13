@@ -11,7 +11,7 @@ Não existe um botão para ligar. A conexão só existe quando você **autoriza 
 ## URL de conexão
 
 ```
-https://seuiot.com.br:8000/mcp
+https://seuiot.com.br/mcp
 ```
 
 Você não cola nenhuma chave: o assistente descobre sozinho como entrar (OAuth 2.1 com PKCE) e abre uma página do Seu IoT onde **você** decide o que ele pode acessar.
@@ -20,10 +20,10 @@ Você não cola nenhuma chave: o assistente descobre sozinho como entrar (OAuth 
 
 | Cliente | Como |
 |---|---|
-| **Claude Code** | `claude mcp add --transport http seu-iot https://seuiot.com.br:8000/mcp`, depois rode `/mcp` e autorize no navegador |
+| **Claude Code** | `claude mcp add --transport http seu-iot https://seuiot.com.br/mcp`, depois rode `/mcp` e autorize no navegador |
 | **Claude.ai** | Configurações > Conectores > adicionar um conector personalizado com a URL acima |
-| **Gemini CLI** | No `settings.json`: `"mcpServers": { "seu-iot": { "httpUrl": "https://seuiot.com.br:8000/mcp" } }` |
-| **Cursor** | No `mcp.json`: `"seu-iot": { "url": "https://seuiot.com.br:8000/mcp" }` |
+| **Gemini CLI** | No `settings.json`: `"mcpServers": { "seu-iot": { "httpUrl": "https://seuiot.com.br/mcp" } }` |
+| **Cursor** | No `mcp.json`: `"seu-iot": { "url": "https://seuiot.com.br/mcp" }` |
 | **ChatGPT** | Conectores MCP, onde a sua conta tiver o recurso. Os Custom GPT Actions **ainda não são suportados** |
 
 O suporte a conectores MCP muda rápido entre os fornecedores, então confira a documentação atual do seu cliente. Qualquer cliente que suporte MCP sobre HTTP com OAuth deve funcionar.
